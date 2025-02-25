@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Rates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            padding: 2vh; /* Use viewport height for scaling */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 20vw; /* Scale based on viewport width */
+            margin-bottom: 2vh;
+        }
+
+        h1 {
+            font-size: 5vh; /* Scale font size based on viewport */
+            margin-bottom: 2vh;
+            color: #ffcc00;
+            text-transform: uppercase;
+        }
+
+        .rate {
+            font-size: 4vh;
+            font-weight: bold;
+            padding: 2vh;
+            margin: 1vh 0;
+            border-radius: 15px;
+            background: #444;
+            width: 80%; /* Ensure it stays within screen */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .highlight {
+            background: #ffcc00;
+            color: #222;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .logo { max-width: 25vw; }
+            h1 { font-size: 4vh; }
+            .rate { font-size: 3vh; padding: 1.5vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Company Logo" class="logo"> <!-- Replace with actual logo -->
+        <h1>Gold Rates</h1>
+        <div class="rate"> <span>24KT</span> <span>USD 95.00</span> </div>
+        <div class="rate"> <span>22KT</span> <span>USD 87.50</span> </div>
+        <div class="rate"> <span>21KT</span> <span>USD 84.50</span> </div>
+        <div class="rate"> <span>18KT</span> <span>USD 73.00</span> </div>
+    </div>
+</body>
+</html>
